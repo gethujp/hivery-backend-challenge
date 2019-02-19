@@ -4,7 +4,7 @@ setup(
     name='app',
     version='1.0.0',
     description='Hivery Paranura RESTful API Challenge solution based on Flask-RESTPlus',
-    url='https://github.com/gethujp/hivery-api-final',
+    url='https://github.com/gethujp/hivery-backend-challenge',
     author='Jayaprakash',
     keywords='rest restful api flask swagger openapi flask-restplus',
     packages=find_packages(),
