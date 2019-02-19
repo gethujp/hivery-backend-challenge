@@ -23,3 +23,57 @@ To deliver your system, you need to send the link on GitHub. Your solution must 
 - Tests
 
 Feel free to reach to your point of contact for clarification if you have any questions.
+#Paranuara API
+## Installation Instructions
+- Checkout the project to your local
+- Please make sure **python2.7, mongo db is installed and the db service  is running** 
+- Open the terminal in the root directory (hivery-backend-challenge)
+- Create a virtual environment using the following command
+    `virtualenv .venv`
+    
+    `source .venv/bin/activate`
+    
+- After the virtual environment is activated run the `make all` command in the commandline . This command installs all the required dependencies, packages the application, executes the unit tests and on successful completion starts the server in the port `http://localhost:8081/api` , which will open a swagger UI for the paranuara Api
+
+## Running test cases
+
+- To execute the test cases separately run the following command
+    `make tests`
+    
+## Running server
+
+- To run the server seperately run the following command
+
+    `make dev`
+
+## SwaggerUI
+
+- Once the server is started using `make all` or `make dev` command, the swagger UI can be seen in the following URL
+
+    <http://localhost:8081/api/>
+    
+   ![Alt text](swagger-pics/swaggerUI.png)
+   
+- find all the hosted end points in the swagger
+
+- Expand all the given API endpoints to see more details such as input, output response,etc..
+
+   ![Alt text](swagger-pics/swagger-1.png)
+
+- To try the API click "Try it out" and enter the details requested
+
+   ![Alt text](swagger-pics/swagger-2.png)
+- The response for the request can be viewed below
+   ![Alt text](swagger-pics/swagger-4.png)
+   
+   
+   
+
+##Changing the JSON files:
+
+- Change the files in the `hivery-backend-challenges/app/resources/companies.json` or `hivery-backend-challenges/app/resources/people.json`. But make sure the file name and format is same and it resides in the same folder.
+
+- Once the file is changed execute `make dev` to ensure the new data is loaded into the table and reflected in the service.
+
+
+**Please feel free to contact me if there are any issues**
